@@ -18,6 +18,7 @@ public class CountCoins : MonoBehaviour
 
 	private void Update()
 	{
+		print(CoinAmount);
 		CountDisplay.text = CoinAmount.ToString();
 	}
 	

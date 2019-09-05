@@ -14,6 +14,7 @@
         </e>
         <e p="Script" t="Include">
           <e p="CarDriveForwardBehaviour.cs" t="Include" />
+          <e p="CarSetter.cs" t="Include" />
           <e p="Coin.cs" t="Include" />
           <e p="CoolDownSystem.cs" t="Include" />
           <e p="CountCoins.cs" t="Include" />
@@ -21,6 +22,7 @@
           <e p="GameController.cs" t="Include" />
           <e p="IPooledObject.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
+          <e p="ModelOfCar.cs" t="Include" />
           <e p="MyTag.cs" t="Include" />
           <e p="ObjectPooler.cs" t="Include" />
           <e p="PathOfCar.cs" t="Include" />

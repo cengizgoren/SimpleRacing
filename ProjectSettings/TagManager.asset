@@ -10,6 +10,9 @@ TagManager:
   - CountDownStart
   - GameOverText
   - FadeIn
+  - LPath
+  - RPath
+  - MPath
   layers:
   - Default
   - TransparentFX

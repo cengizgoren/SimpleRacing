@@ -6,17 +6,18 @@ using UnityEngine.Serialization;
 
 public class PathOfCar : MonoBehaviour {
 
-	public GameObject LPath;
-	public GameObject MPath;
-	public GameObject RPath;
+	private GameObject LPath;
+	private GameObject MPath;
+	private GameObject RPath;
 	
 	private int path;
 
 	private GameObject _target;
-	private Rigidbody rb;
 	private void Start()
 	{
-		rb = GetComponent<Rigidbody>();
+		LPath = GameObject.FindGameObjectWithTag(MyTag.LPath.ToString());	
+		RPath = GameObject.FindGameObjectWithTag(MyTag.RPath.ToString());	
+		MPath = GameObject.FindGameObjectWithTag(MyTag.MPath.ToString());	
 		path = 2;
 		_target = MPath;
 	}
@@ -59,9 +60,5 @@ public class PathOfCar : MonoBehaviour {
 
 	}
 
-	private void TurnTheCar()
-	{
-		
-	}
 	
 }

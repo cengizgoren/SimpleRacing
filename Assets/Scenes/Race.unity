@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 372683913}
   m_Layer: 0
   m_Name: LSphere
-  m_TagString: Untagged
+  m_TagString: LPath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 532720414}
   m_Layer: 0
   m_Name: RSphere (2)
-  m_TagString: Untagged
+  m_TagString: RPath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1079,6 +1079,20 @@ Prefab:
       propertyPath: m_Mass
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23278359509240898, guid: 815176c3adeb40448ba2fc0d71d454a0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23278359509240898, guid: 815176c3adeb40448ba2fc0d71d454a0,
+        type: 2}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309791300091212, guid: 815176c3adeb40448ba2fc0d71d454a0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 815176c3adeb40448ba2fc0d71d454a0, type: 2}
   m_IsPrefabParent: 0
@@ -1131,6 +1145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036802650}
   - component: {fileID: 1036802649}
+  - component: {fileID: 1036802651}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1168,6 +1183,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036802651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1036802648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95b4c859e7ea0c4dbeeb040562892b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1469499536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1207,7 @@ GameObject:
   - component: {fileID: 1469499538}
   m_Layer: 0
   m_Name: MSphere (1)
-  m_TagString: Untagged
+  m_TagString: MPath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1682,6 +1708,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362bb98f02d00eb4d9373cacf5db3c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LPath: {fileID: 372683911}
-  MPath: {fileID: 1469499536}
-  RPath: {fileID: 532720412}
